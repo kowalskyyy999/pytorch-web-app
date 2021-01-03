@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dog Identification Web Application</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+</head>
+
+<body class="d-flex justify-content-center">
+  <main>
+    <h1 class="h3 mt-4 mb-3 fw-normal text-center">Please Upload Image File</h1>
+    {% if filename %}
+    	<div>
+    		<img src="{{ url_for('display_image', filename=filename)}}"widht='400' height="400" class="mb-2">
+    	</div>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data" class="mt-2 form-signin">
+      <input type="file" name="image", name="image", class="w-100 form-control d-flex justify-content-center" required autofocus="">
+      <button class="w-100 btn btn-lg btn-primary" type="submit" value="Predict" required>Predict</button>
+    </form>
+
+    <footer class="text-center mt-4">
+    	<div>
+    		<h6>Created by @kowalskyyy666</h6>
+    	</div>
+    </footer>
+
+  </main>
+</body>
+</html>

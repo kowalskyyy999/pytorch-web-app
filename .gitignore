@@ -1,0 +1,4 @@
+__pycache__/*.pyc 
+results/__results___files/*.png
+results/.vscode/*.json
+results/*.py
