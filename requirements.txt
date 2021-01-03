@@ -4,8 +4,8 @@ MarkupSafe==1.1.1
 matplotlib==3.2.1
 numpy==1.18.4
 Pillow==6.2.2
-torchvision==0.2.1
-https://download.pytorch.org/whl/cpu/torch-1.0.1.post2-cp37-cp37m-linux_x86_64.whl
 gunicorn==20.0.4
 itsdangerous==1.1.0
 certifi==2020.12.5
+torch==1.7.0
+torchvision==0.8.1
